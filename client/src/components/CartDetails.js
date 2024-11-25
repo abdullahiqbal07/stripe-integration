@@ -79,7 +79,7 @@ const CartDetails = () => {
         "Content-Type":"application/json"
     }
 
-    const res = await fetch('http://localhost:3000/checkout', {
+    const res = await fetch('http://localhost:8080/checkout', {
         method: 'POST',
         headers: headers,
         body: JSON.stringify(body)
