@@ -1,6 +1,7 @@
 import Headers from './components/Headers';
 import Home from './components/Home';
 import CartDetails from './components/CartDetails';
+import Payment from './components/Payment';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Routes,Route} from "react-router-dom"
@@ -13,6 +14,7 @@ function App() {
      <Routes>
       <Route  path='/' element={<Home />}/>
       <Route  path='/cart' element={<CartDetails />}/>
+      <Route  path='/payment' element={<Payment />}/>
      </Routes>
      <Toaster />
     </>
