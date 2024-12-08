@@ -16,6 +16,8 @@ router.post('/create-payment-intent', async (req, res) => {
       currency: currency || 'usd',
     });
 
+    console.log(paymentIntent); 
+
     res.status(200).json({
       clientSecret: paymentIntent.client_secret, // Send client secret to the frontend
     });

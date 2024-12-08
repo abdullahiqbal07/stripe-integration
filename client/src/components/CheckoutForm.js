@@ -25,6 +25,7 @@ function CheckoutForm() {
       currency: 'usd',
     });
 
+
     const { clientSecret } = data;
 
     // Confirm payment on the client side
@@ -33,6 +34,7 @@ function CheckoutForm() {
         card: elements.getElement(CardElement),
       },
     });
+
 
     if (result.error) {
       setMessage(result.error.message);
